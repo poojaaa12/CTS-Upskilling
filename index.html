@@ -2,251 +2,155 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Assessment</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<style>
-body {
-  background: #f1eef7;
-}
-section.mb-5 {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 1.5rem;
-  padding: 2rem;
-}
-.hero {
-  background: linear-gradient(135deg, #fd0da9 0%, #c14242 100%);
-  color: #ffffff;
-}
-.bg-custom-purple {
-  background: #c17742 !important;
-}
-.hero .btn-outline-light {
-  border-color: rgba(255, 255, 255, 0.55);
-}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Community Event Portal</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="hero py-5 mb-5">
-<div class="container">
-<nav class="navbar navbar-expand-lg navbar-dark px-0">
-<a class="navbar-brand fw-bold" href="#"></a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#heroNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="heroNav">
-<ul class="navbar-nav ms-auto">
+<!-- Navigation -->
+<nav>
+<a href="#home">Home</a>
+<a href="#events">Events</a>
+<a href="#contact">Contact</a>
+<a href="help.html" target="_blank">Help</a>
+</nav>
+<!-- Main -->
+<main>
+<!-- Welcome Banner -->
+<section id="home">
+<div id="mainHeader">
+ Welcome to the Community Portal!
+<span style="color:red; font-weight:bold;">
+ Limited Time Registration Offer!
+</span>
+</div>
+<p class="highlight">
+ Stay updated with local events and activities.
+</p>
+</section>
+<!-- Events Section -->
+<section id="events">
+<h2>Community Event Gallery</h2>
+<table>
+<caption>Past Community Events</caption>
+<tr>
+<td>
+<img src="images/img_1.jpg" alt="Music Event"
+title="Music Event" class="gallery-img">
+<p>Music Festival</p>
+</td>
+<td>
+<img src="images/img_2.jpeg" alt="Food Event"
+title="Food Event" class="gallery-img">
+<p>Food Carnival</p>
+</td>
+<td>
+<img src="images/img_3.jpeg" alt="Sports Event"
+title="Sports Event" class="gallery-img">
+<p>Sports Day</p>
+</td>
+</tr>
+<tr>
+<td>
+    <img src="images/img_4.jpeg" alt="Art Event" title="Art
+Event" class="gallery-img">
+<p>Art Exhibition</p>
+</td>
+<td>
+<img src="images/img_5.jpeg" alt="Book Event"
+title="Book Event" class="gallery-img">
+<p>Book Fair</p>
+</td>
+<td>
+<img src="images/img_6.jpg" alt="Dance Event"
+title="Dance Event" class="gallery-img">
+<p>Dance Competition</p>
+</td>
+</tr>
+</table>
+<div class="eventCard">
+    <h3>Music Festival</h3>
+    <p>Enjoy live music performances from local artists.</p>
+</div>
 
-</ul>
+<div class="eventCard">
+    <h3>Sports Day</h3>
+    <p>Participate in exciting sports competitions.</p>
 </div>
-</nav>
-<div class="text-center py-5">
-<h1 class="display-4 fw-bold mb-3">Bootstrap Assessment</h1>
-<p class="lead mx-auto" style="max-width: 700px;"></p>
-<a href="#responsive-grid" class="btn btn-outline-light btn-lg mt-3">Explore the layout</a>
+
+<div class="eventCard">
+    <h3>Art Exhibition</h3>
+    <p>Explore creative artwork from community members.</p>
 </div>
-</div>
-</header>
-<main class="container my-5">
-<section id="responsive-grid" class="mb-5">
-<h2 class="mb-4">Responsive Grid</h2>
-<div class="row g-3">
-<div class="col-12 col-sm-6 col-lg-4">
-<div class="p-4 bg-info text-white rounded">Box A</div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4">
-<div class="p-4 bg-warning text-dark rounded">Box B</div>
-</div>
-<div class="col-12 col-sm-6 col-lg-4">
-<div class="p-4 bg-success text-white rounded">Box C</div>
-</div>
-</div>
+
+<div id="eventContainer"></div>
 </section>
-<section class="mb-5">
-<h2 class="mb-4">Layout & Order</h2>
-<div class="row mb-4">
-<div class="col-md-3 bg-secondary text-white p-4 rounded">Navigation</div>
-<div class="col-md-9 bg-light p-4 rounded">Main content area with an intro paragraph that stands out in a larger column.</div>
-</div>
-<div class="row align-items-center justify-content-center" style="min-height: 150px;">
-<div class="col-6 col-sm-4 bg-primary text-white text-center p-3 rounded">Centered widget</div>
-</div>
-<div class="row mt-4">
-<div class="col-md-6 order-md-2 bg-custom-purple text-white p-3 rounded">Second panel</div>
-<div class="col-md-6 order-md-1 bg-success text-white p-3 rounded">First panel</div>
-</div>
+<section>
+    <h2>Community News</h2>
+
+    <div class="news description">
+        The Local Community Event Portal helps residents stay informed about
+        upcoming activities, workshops, cultural programs and public events.
+        Citizens are encouraged to participate in music festivals, sports
+        competitions, educational seminars and volunteer initiatives.
+        Community leaders continue to organize programs that strengthen
+        neighborhood engagement and improve social interaction among residents.
+        Regular events provide opportunities for learning, entertainment and
+        collaboration while promoting local culture and talent.
+    </div>
 </section>
-<section class="mb-5">
-<h2 class="mb-4">Flex Navigation</h2>
-<div class="d-flex flex-column flex-md-row gap-2 bg-light p-3 rounded">
-<a href="#" class="btn btn-outline-primary">Overview</a>
-<a href="#" class="btn btn-outline-secondary">Features</a>
-<a href="#" class="btn btn-outline-success">Contact</a>
-</div>
-<div class="card mt-4 shadow-sm">
-<div class="card-body d-flex justify-content-between align-items-center">
-<div>
-<h5 class="card-title mb-1">Featured Service</h5>
-<p class="mb-0 text-muted">A clean utility card with action controls.</p>
-</div>
-<button class="btn btn-primary">Explore</button>
-</div>
-</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Text Styling</h2>
-<h1 class="display-4">Headline Style</h1>
-<p class="lead">This paragraph highlights the Bootstrap typography utilities.</p>
-<p class="text-secondary">Secondary muted text for supporting details.</p>
-<p class="fw-semibold">Strong emphasis text with extra weight.</p>
-<p class="text-uppercase">uppercase sample</p>
-<p class="text-lowercase">LOWERCASE SAMPLE</p>
-<p class="text-capitalize">capitalize sample text</p>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Forms in Action</h2>
-<form>
-<div class="mb-3">
-<label class="form-label">Full Name</label>
-<input type="text" class="form-control" placeholder="Jane Smith">
-</div>
-<div class="input-group mb-3">
-<span class="input-group-text">#</span>
-<input type="text" class="form-control" placeholder="Project code">
-</div>
-<div class="form-check mb-3">
-<input class="form-check-input" type="checkbox" id="consentCheck">
-<label class="form-check-label" for="consentCheck">I agree to the policy</label>
-</div>
+<!-- Registration Form -->
+<section>
+<h2>Event Registration</h2>
+<form id="registrationForm">
+<label>Name:</label>
+<input type="text" id="name" placeholder="Enter your name"
+required autofocus>
+<label>Email:</label>
+<input type="email" id="email" placeholder="Enter your email"
+required>
+<label>Phone Number:</label>
+<input type="text" id="phone" placeholder="Enter phone number"
+onblur="validatePhone()">
+<label>Event Date:</label>
+<input type="date" required>
+<label>Select Event Type:</label>
+<select id="eventType" onchange="showFee()">
+<option value="">Select</option>
+<option value="Music">Music</option>
+<option value="Sports">Sports</option>
+<option value="Art">Art</option>
+</select>
+<p id="feeDisplay"></p>
+<label>Feedback Message:</label>
+<textarea id="feedback" placeholder="Enter feedback"></textarea>
+<p>Character Count: <span id="charCount">0</span></p>
+<button type="submit" id="submitBtn">Register</button>
+<output id="confirmationMessage"></output>
 </form>
-<div class="form-floating mb-3">
-<input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-<label for="emailInput">Email address</label>
-</div>
 </section>
-<section class="mb-5">
-<h2 class="mb-4">Button Variations</h2>
-<button class="btn btn-primary me-2 mb-2">Primary</button>
-<button class="btn btn-outline-secondary me-2 mb-2">Outline</button>
-<button class="btn btn-success me-2 mb-2">Success</button>
-<button class="btn btn-danger me-2 mb-2">Danger</button>
-<button class="btn btn-dark mb-2">Dark</button>
-<div class="btn-group d-block d-sm-inline-block mt-3">
-<button class="btn btn-info">Left</button>
-<button class="btn btn-info">Center</button>
-<button class="btn btn-info">Right</button>
-</div>
+<!-- Video Section -->
+<section>
+<h2>Event Promo Video</h2>
+<video id="promoVideo" width="500" controls
+oncanplay="videoReady()">
+<source src="videos/Local community event.mp4" type="video/mp4">
+</video>
+<p id="videoMessage"></p>
 </section>
-<section class="mb-5">
-<h2 class="mb-4">Responsive Navbar</h2>
-<nav class="navbar navbar-expand-lg navbar-light bg-white border rounded p-3">
-<div class="container-fluid">
-<a class="navbar-brand" href="#">DN Studio</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navMenu">
-<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Services</a></li>
-<li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
-</ul>
-<form class="d-flex" role="search">
-<input class="form-control me-2" type="search" placeholder="Search">
-<button class="btn btn-outline-success" type="submit">Go</button>
-</form>
-</div>
-</div>
-</nav>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Profile Card</h2>
-<div class="card" style="max-width: 22rem;">
-<img src="C:\Users\POOJA RAJENDIRAN\OneDrive\Documents\CTS\CTS DN Upskilling\CTS DN Upskilling\CTS Bootstrap tasks\images\imgg.jpg" class="card-img-top" alt="Profile image">
-<div class="card-body">
-<h5 class="card-title">Amina Patel</h5>
-<p class="card-text text-muted">Creative consultant with design expertise.</p>
-</div>
-</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Spacing Utilities</h2>
-<div class="bg-secondary text-white p-3 mb-3 rounded">Padding 3 with margin-bottom 3</div>
-<div class="bg-success text-white py-5 mt-4 rounded">Extra vertical padding and top spacing</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Color Panels</h2>
-<div class="p-3 mb-2 bg-primary text-white rounded">Primary panel</div>
-<div class="p-3 mb-2 bg-warning rounded">Warning panel</div>
-<div class="p-3 bg-dark text-white rounded">Dark panel</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Visibility Utilities</h2>
-<div class="d-none d-md-block bg-info text-white p-3 rounded">Shown on medium screens and larger</div>
-<div class="d-none d-lg-flex bg-success text-white p-3 rounded mt-3">Shown on large screens only</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Borders & Shadows</h2>
-<img src="C:\Users\POOJA RAJENDIRAN\OneDrive\Documents\CTS\CTS DN Upskilling\CTS DN Upskilling\CTS Bootstrap tasks\images\imgg2.jpg" class="rounded-circle border border-3 border-info mb-3" alt="Circle image">
-<div class="card shadow rounded-pill p-4">Soft shadow badge</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Position Utilities</h2>
-<div class="position-relative d-inline-block">
-<img src="C:\Users\POOJA RAJENDIRAN\OneDrive\Documents\CTS\CTS DN Upskilling\CTS DN Upskilling\CTS Bootstrap tasks\images\imgg3.jpg" class="rounded" alt="Positioned image" style="max-width:280px;">
-<span class="badge bg-danger position-absolute top-0 start-100 translate-middle">New</span>
-</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Bootstrap Icons</h2>
-<i class="bi bi-twitter fs-1 text-primary me-3"></i>
-<i class="bi bi-github fs-1 text-dark me-3"></i>
-<i class="bi bi-envelope fs-1 text-danger"></i>
-<div class="mt-3">
-<button class="btn btn-primary"><i class="bi bi-star-fill"></i> Favorite</button>
-</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Interactive Modal</h2>
-<button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#showModal">Launch Modal</button>
-<div class="modal fade" id="showModal" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title">Welcome!</h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<div class="modal-body">
-<p>This modal demonstrates Bootstrap’s JavaScript component.</p>
-</div>
-<div class="modal-footer">
-<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="mb-5">
-<h2 class="mb-4">Accordion</h2>
-<div class="accordion" id="infoAccordion">
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingOne">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-What does this page show?
-</button>
-</h2>
-<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#infoAccordion">
-<div class="accordion-body">It demonstrates Bootstrap utilities in a modern page layout.</div>
-</div>
-</div>
-</div>
+<!-- Geolocation -->
+<section>
+<h2>Find Nearby Events</h2>
+<button onclick="findLocation()">Find Nearby Events</button>
+<p id="locationResult"></p>
 </section>
 </main>
-<footer class="bg-dark text-white text-center py-4">
-<div class="container">Bootstrap Utility Showcase © 2026</div>
+<!-- Footer -->
+<footer id="contact">
+<p> Phone : 0123456789 </p>
+<p> Maill Id : qwerty@event.com</p>
+<p> &copy; 2026 Local Community Event Portal</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
